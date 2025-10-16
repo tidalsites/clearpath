@@ -13,7 +13,6 @@ export default function Home() {
       <Services />
       <Partners />
       <About />
-
       <Contact />
       {/* <div className="absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/4 opacity-10 -z-10">
         <Image src={compass} alt="" />

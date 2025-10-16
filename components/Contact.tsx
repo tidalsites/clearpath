@@ -8,9 +8,9 @@ export const Contact = () => {
       id="contact"
       className="text-(--blue) bg-neutral-200 relative isolate overflow-hidden border-t-[1px] border-neutral-300 px-8 py-12"
     >
-      <div className="flex flex-wrap justify-between gap-4 sm:gap-8 md:gap-12 sm:ml-8">
+      <div className="flex flex-col gap-4 sm:justify-center | sm:gap-8 | lg:ml-8 lg:flex-row lg:gap-12">
         <div className="flex flex-col gap-4">
-          <h2 className="text-4xl uppercase font-barlow border-b-2 py-2 w-fit ">
+          <h2 className="text-4xl uppercase font-barlow border-b-2 py-2 w-fit">
             Contact Us
           </h2>
           <p className="max-w-[60ch]">
@@ -43,31 +43,31 @@ export const Contact = () => {
               <FaInstagram className="text-2xl" />
             </a>
           </div>
-          <div className="grid grid-cols-[auto,1fr] w-fit gap-2 py-4 h-fit mt-8 bg-(--blue) text-background rounded-3xl px-4 border-[1px] border-neutral-300">
+          <div className="grid grid-cols-[auto,1fr] gap-2 py-4 h-fit mt-2 sm:mt-4 bg-(--blue) text-background rounded-3xl px-4 border-[1px] border-neutral-300 max-w-[350px]">
             <p className="flex justify-between items-center gap-2 text-lg bg-background text-(--blue) px-4 py-1 rounded-full w-full col-span-2 border-[1px] border-neutral-300">
               Hours
               <LuClock12 className="text-2xl" />
             </p>
-            <div className="grid grid-cols-subgrid col-span-2 gap-4 sm:gap-8 md:gap-12">
+            <div className="grid grid-cols-subgrid col-span-2 md:gap-1 lg:gap-4 xl:gap-12">
               <p>Monday - Friday</p>
               <p className="text-right">8:00 - 16:00</p>
             </div>
-            <div className="grid grid-cols-subgrid col-span-2 gap-4 sm:gap-8 md:gap-12">
+            <div className="grid grid-cols-subgrid col-span-2 md:gap-1 lg:gap-4 xl:gap-12">
               <p>Saturday</p>
               <p className="text-right">8:00 - 16:00</p>
             </div>
-            <div className="grid grid-cols-subgrid col-span-2 gap-4 sm:gap-8 md:gap-12">
+            <div className="grid grid-cols-subgrid col-span-2 md:gap-1 lg:gap-4 xl:gap-12">
               <p>Sunday</p>
               <p className="text-right">8:00 - 16:00</p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col rounded-3xl mx-4 gap-8 py-4 md:py-8 my-8 border-[1px] border-neutral-300 bg-background shadow-[2px_2px_6px_-2px_hsl(0,0%,70%)]">
+        <div className="flex flex-col rounded-3xl gap-8 py-4 md:py-8 my-12 border-[1px] border-neutral-300 bg-background shadow-[2px_2px_6px_-2px_hsl(0,0%,70%)] w-full md:w-fit">
           <form
             className="flex flex-col gap-4 p-4 sm:pl-8 md:pl-12 text-lg"
             action=""
           >
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4 lg:flex-col xl:flex-row">
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-1">
                   <label className="text-sm" htmlFor="first_name">

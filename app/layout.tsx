@@ -29,8 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${barlow.variable} ${nunito.variable} antialiased`}>
-        <ContactBar />
-        {/* <Navbar /> */}
+        {/* <ContactBar /> */}
+        <Navbar />
         {children}
         <Footer />
       </body>
