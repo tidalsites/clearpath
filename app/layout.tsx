@@ -3,6 +3,7 @@ import { Barlow_Condensed, Nunito } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { ContactBar } from "@/components/ContactBar";
+import { Footer } from "@/components/Footer";
 
 const barlow = Barlow_Condensed({
   variable: "--font-barlow",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <ContactBar />
         {/* <Navbar /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );

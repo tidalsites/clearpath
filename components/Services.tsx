@@ -8,9 +8,9 @@ import { TbLicense } from "react-icons/tb";
 
 export const Services = () => {
   return (
-    <section className="bg-(--background)">
+    <section className="">
       <div className="flex flex-col gap-4 md:flex-row">
-        <div className="flex flex-col gap-4 bg-(--blue) py-10 px-8 sm:ml-4 z-10 sm:rounded-b-3xl">
+        <div className="flex flex-col gap-4 bg-(--blue) py-10 px-8 sm:ml-8 z-10 border-neutral-300 border-r-[1px] border-l-[1px]">
           <h2 className="text-4xl uppercase font-barlow border-b-2 w-fit text-neutral-100">
             Services
           </h2>
