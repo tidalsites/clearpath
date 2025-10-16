@@ -8,10 +8,10 @@ import { TbLicense } from "react-icons/tb";
 
 export const Services = () => {
   return (
-    <section className="bg-(--background)">
+    <section id="services" className="">
       <div className="flex flex-col gap-4 md:flex-row">
-        <div className="flex flex-col gap-4 bg-(--blue) py-10 px-8 sm:ml-4 z-10 sm:rounded-b-3xl">
-          <h2 className="text-4xl uppercase font-barlow border-b-2 w-fit text-neutral-100">
+        <div className="flex flex-col gap-4 bg-(--blue) py-10 px-8 lg:ml-8 z-10 border-neutral-300 lg:border-r-[1px] lg:border-l-[1px]">
+          <h2 className="text-4xl uppercase font-barlow border-b-2 py-2 w-fit text-background">
             Services
           </h2>
           <p className="py-2 max-w-[60ch] text-neutral-100">
@@ -21,14 +21,14 @@ export const Services = () => {
             operational setup and immigration.
           </p>
         </div>
-        <div className="flex py-10 px-8 gap-4 w-full mr-4 rounded-3xl">
+        <div className="flex py-10 px-8 gap-4 w-full mr-4">
           <div className="flex flex-wrap justify-center w-fit gap-4">
-            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 max-w-[40ch]">
+            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 w-full md:max-w-[40ch]">
               <MdOutlineBusiness className="text-4xl text-(--blue)" />
               <p className="uppercase font-barlow text-xl text-(--blue) border-b-(--blue) border-b-2">
                 Company Formation & Legal Structure
               </p>
-              <p className="mt-2">
+              <p className="hidden md:block mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Architecto provident quaerat, exercitationem animi ipsa facilis
                 maxime est eius quos harum accusantium iure quae, aliquid
@@ -46,12 +46,12 @@ export const Services = () => {
                 </li>
               </ul>
             </div>
-            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 max-w-[40ch]">
+            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 w-full md:max-w-[40ch]">
               <FaBalanceScale className="text-4xl text-(--blue)" />
               <p className="uppercase font-barlow text-xl text-(--blue) border-b-(--blue) border-b-2">
                 Accounting & Tax Services
               </p>
-              <p className="mt-2">
+              <p className="hidden md:block mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Architecto provident quaerat, exercitationem animi ipsa facilis
                 maxime est eius quos harum accusantium iure quae, aliquid
@@ -72,12 +72,12 @@ export const Services = () => {
                 </li>
               </ul>
             </div>
-            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 max-w-[40ch]">
+            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 w-full md:max-w-[40ch]">
               <TbLicense className="text-4xl text-(--blue)" />
               <p className="uppercase font-barlow text-xl text-(--blue) border-b-(--blue) border-b-2">
                 Permits & Licensing
               </p>
-              <p className="mt-2">
+              <p className="hidden md:block mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Architecto provident quaerat, exercitationem animi ipsa facilis
                 maxime est eius quos harum accusantium iure quae, aliquid
@@ -96,12 +96,12 @@ export const Services = () => {
                 </li>
               </ul>
             </div>
-            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 max-w-[40ch]">
+            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 w-full md:max-w-[40ch]">
               <FaPlaneArrival className="text-4xl text-(--blue)" />
               <p className="uppercase font-barlow text-xl text-(--blue) border-b-(--blue) border-b-2">
                 Immigration & Residency
               </p>
-              <p className="mt-2">
+              <p className="hidden md:block mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Architecto provident quaerat, exercitationem animi ipsa facilis
                 maxime est eius quos harum accusantium iure quae, aliquid
@@ -119,12 +119,12 @@ export const Services = () => {
                 </li>
               </ul>
             </div>
-            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 max-w-[40ch]">
+            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 w-full md:max-w-[40ch]">
               <MdOutlineRealEstateAgent className="text-4xl text-(--blue)" />
               <p className="uppercase font-barlow text-xl text-(--blue) border-b-(--blue) border-b-2">
                 Real Estate & Investment Advisory
               </p>
-              <p className="mt-2">
+              <p className="hidden md:block mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Architecto provident quaerat, exercitationem animi ipsa facilis
                 maxime est eius quos harum accusantium iure quae, aliquid
@@ -142,12 +142,12 @@ export const Services = () => {
                 </li>
               </ul>
             </div>
-            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 max-w-[40ch]">
+            <div className="bg-neutral-100 p-4 rounded-lg shadow-lg outline-1 outline-neutral-200 flex flex-col gap-1 w-full md:max-w-[40ch]">
               <MdOutlineBusinessCenter className="text-4xl text-(--blue)" />
               <p className="uppercase font-barlow text-xl text-(--blue) border-b-(--blue) border-b-2">
                 Banking & Administrative Support
               </p>
-              <p className="mt-2">
+              <p className="hidden md:block mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Architecto provident quaerat, exercitationem animi ipsa facilis
                 maxime est eius quos harum accusantium iure quae, aliquid

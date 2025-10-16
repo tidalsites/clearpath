@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import logo from "@/public/logo.svg";
+import logo from "@/public/logo_white.svg";
 import Image from "next/image";
 
 import { PiListBold, PiXBold } from "react-icons/pi";
+import { ContactBar } from "./ContactBar";
 
 function removeNoScroll() {
   document.body.classList.remove("no-scroll");
@@ -15,9 +16,10 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="h-(--navbar-height)">
+    <div className="bg-(--blue) text-background backdrop-blur-4xl z-30 w-full">
+      <ContactBar />
       <nav
-        className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2 bg-neutral-100 mt-4 rounded-3xl"
+        className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2"
         aria-label="Primary Navigation"
       >
         <button
@@ -41,54 +43,40 @@ export const Navbar = () => {
             <PiListBold className="text-zinc-200 text-4xl w-fit px-4 md:hidden" />
           )}
         </button>
-        <div className="h-12 w-12 mr-auto">
+        <div className="hidden md:block h-12 w-12 mr-auto">
           <Link href="/">
-            <Image
-              src={logo}
-              alt="Olokun LLC"
-              className="h-full w-auto"
-              priority
-            />
+            <Image src={logo} alt="" className="h-full w-auto" priority />
           </Link>
         </div>
         <div className="hidden md:flex relative isolate">
-          <Link className="px-4 rounded-full relative overflow-hidden" href="/">
-            Home
-          </Link>
           <Link
-            className="px-4 rounded-full relative overflow-hidden"
-            href="/about"
+            className="px-4 py-1 rounded-full relative overflow-hidden hover:bg-background hover:text-(--blue) transition-colors"
+            href="#about"
           >
             About
           </Link>
           <Link
-            className="px-4 rounded-full relative overflow-hidden"
-            href="/capabilities"
+            className="px-4 py-1 rounded-full relative overflow-hidden hover:bg-background hover:text-(--blue) transition-colors"
+            href="#services"
           >
             Services
           </Link>
           <Link
-            className="px-4 rounded-full relative overflow-hidden"
-            href="/work"
-          >
-            Testimonials
-          </Link>
-          <Link
-            href="/completecloud"
-            className="px-4 rounded-full relative overflow-hidden"
+            href="#partnerships"
+            className="px-4 py-1 rounded-full relative overflow-hidden hover:bg-background hover:text-(--blue) transition-colors"
           >
             Partnerships
           </Link>
           <Link
-            className="px-4 rounded-full relative overflow-hidden"
-            href="/contact"
+            className="px-4 py-1 rounded-full relative overflow-hidden hover:bg-background hover:text-(--blue) transition-colors"
+            href="#contact"
           >
             Contact
           </Link>
         </div>
       </nav>
       <nav
-        className={`absolute h-[calc(100vh-var(--navbar-height))] top-(--navbar-height) left-0 z-30 bg-black/20 backdrop-blur-xs w-screen md:hidden transition-all ${
+        className={`absolute h-[calc(100vh-var(--navbar-height))] top-[var(--navbar-height)] left-0 z-30 bg-background/80 backdrop-blur-xs w-screen md:hidden transition-all ${
           !isMenuOpen ? "-translate-x-full" : "translate-x-0"
         }`}
         onClick={(e) => {
@@ -98,22 +86,13 @@ export const Navbar = () => {
         id="mobile-nav"
         aria-label="Mobile Navigation"
       >
-        <div className="w-[min(100vw,400px)] flex flex-col gap-4 p-7 bg-zinc-200 text-black h-full">
+        <div className="w-[min(100vw,400px)] flex flex-col gap-4 p-7 text-(--blue) uppercase text-lg h-full">
           <Link
             onClick={() => {
               setIsMenuOpen(false);
               removeNoScroll();
             }}
-            href="/"
-          >
-            Home
-          </Link>
-          <Link
-            onClick={() => {
-              setIsMenuOpen(false);
-              removeNoScroll();
-            }}
-            href="/about"
+            href="#about"
           >
             About
           </Link>
@@ -122,34 +101,25 @@ export const Navbar = () => {
               setIsMenuOpen(false);
               removeNoScroll();
             }}
-            href="/capabilities"
+            href="#services"
           >
-            Capabilities
+            Services
           </Link>
           <Link
             onClick={() => {
               setIsMenuOpen(false);
               removeNoScroll();
             }}
-            href="/work"
+            href="#partnerships"
           >
-            Our Work
+            Partnerships
           </Link>
           <Link
             onClick={() => {
               setIsMenuOpen(false);
               removeNoScroll();
             }}
-            href="/completecloud"
-          >
-            CompleteCloud
-          </Link>
-          <Link
-            onClick={() => {
-              setIsMenuOpen(false);
-              removeNoScroll();
-            }}
-            href="/contact"
+            href="#contact"
           >
             Contact
           </Link>
