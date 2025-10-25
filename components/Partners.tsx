@@ -5,7 +5,7 @@ export const Partners = () => {
   return (
     <section
       id="partnerships"
-      className="flex flex-col gap-8 bg-neutral-200 border-t-[1px] border-neutral-300 border-b-[1px] md:py-10 pb-10"
+      className="flex flex-col gap-8 bg-neutral-200 border-t border-neutral-300 border-b md:py-10 pb-10"
     >
       <div className="flex flex-col gap-2 bg-(--green) text-neutral-100 md:rounded-3xl py-8 relative isolate overflow-hidden max-w-7xl mx-auto px-8 outline-1 outline-neutral-300">
         <h2 className="text-4xl uppercase text-center font-barlow border-b-2 w-fit mx-auto py-2 px-15">

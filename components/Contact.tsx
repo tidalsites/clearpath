@@ -1,14 +1,14 @@
-import { MdEmail, MdFacebook, MdWhatsapp } from "react-icons/md";
-import { FaInstagram } from "react-icons/fa6";
+import { MdEmail, MdWhatsapp } from "react-icons/md";
 import { LuClock12 } from "react-icons/lu";
+import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
   return (
     <section
       id="contact"
-      className="text-(--blue) bg-neutral-200 relative isolate overflow-hidden border-t-[1px] border-neutral-300 px-8 py-12"
+      className="text-theme bg-neutral-200 relative isolate overflow-hidden border-t border-neutral-300 px-8 py-12"
     >
-      <div className="flex flex-col gap-4 sm:justify-center | sm:gap-8 | lg:ml-8 lg:flex-row lg:gap-12">
+      <div className="flex flex-col gap-4 sm:justify-center | sm:gap-8 | xl:ml-8 xl:flex-row xl:gap-12">
         <div className="flex flex-col gap-4">
           <h2 className="text-4xl uppercase font-barlow border-b-2 py-2 w-fit">
             Contact Us
@@ -23,116 +23,34 @@ export const Contact = () => {
           <div className="flex gap-4">
             <a
               href="mailto:info@myclearpath.co"
-              className="flex gap-1 items-center cursor-pointer px-2 py-1 hover:bg-(--blue) hover:text-background transition-colors rounded-full"
+              className="flex gap-1 items-center cursor-pointer px-2 py-1 hover:bg-theme hover:text-background transition-colors rounded-full"
             >
               <MdEmail className="text-2xl" />
             </a>
-            <a className="flex gap-1 items-center cursor-pointer px-2 py-1 hover:bg-(--blue) hover:text-background transition-colors rounded-full">
+            <a className="flex gap-1 items-center cursor-pointer px-2 py-1 hover:bg-theme hover:text-background transition-colors rounded-full">
               <MdWhatsapp className="text-2xl" />
             </a>
-            <a
-              href="https://facebook.com"
-              className="flex gap-1 items-center cursor-pointer px-2 py-1 hover:bg-(--blue) hover:text-background transition-colors rounded-full"
-            >
-              <MdFacebook className="text-2xl" />
-            </a>
-            <a
-              href="https://instagram.com"
-              className="flex gap-1 items-center cursor-pointer px-2 py-1 hover:bg-(--blue) hover:text-background transition-colors rounded-full"
-            >
-              <FaInstagram className="text-2xl" />
-            </a>
           </div>
-          <div className="grid grid-cols-[auto,1fr] gap-2 py-4 h-fit mt-2 sm:mt-4 bg-(--blue) text-background rounded-3xl px-4 border-[1px] border-neutral-300 max-w-[350px]">
-            <p className="flex justify-between items-center gap-2 text-lg bg-background text-(--blue) px-4 py-1 rounded-full w-full col-span-2 border-[1px] border-neutral-300">
+          <div className="grid grid-cols-[auto,1fr] gap-2 py-4 h-fit mt-2 sm:mt-4 bg-theme text-background rounded-3xl px-4 border border-neutral-300 max-w-[350px]">
+            <p className="flex justify-between items-center gap-2 text-lg bg-background text-theme px-4 py-1 rounded-full w-full col-span-2 border border-neutral-300">
               Hours
               <LuClock12 className="text-2xl" />
             </p>
             <div className="grid grid-cols-subgrid col-span-2 md:gap-1 lg:gap-4 xl:gap-12">
               <p>Monday - Friday</p>
-              <p className="text-right">8:00 - 16:00</p>
+              <p className="text-right">9:00 - 17:00</p>
             </div>
             <div className="grid grid-cols-subgrid col-span-2 md:gap-1 lg:gap-4 xl:gap-12">
               <p>Saturday</p>
-              <p className="text-right">8:00 - 16:00</p>
+              <p className="text-right">9:00 - 12:00</p>
             </div>
             <div className="grid grid-cols-subgrid col-span-2 md:gap-1 lg:gap-4 xl:gap-12">
               <p>Sunday</p>
-              <p className="text-right">8:00 - 16:00</p>
+              <p className="text-right">Closed</p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col rounded-3xl gap-8 py-4 md:py-8 my-12 border-[1px] border-neutral-300 bg-background shadow-[2px_2px_6px_-2px_hsl(0,0%,70%)] w-full md:w-fit">
-          <form
-            className="flex flex-col gap-4 p-4 sm:pl-8 md:pl-12 text-lg"
-            action=""
-          >
-            <div className="flex flex-col md:flex-row gap-4 lg:flex-col xl:flex-row">
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-1">
-                  <label className="text-sm" htmlFor="first_name">
-                    First Name
-                  </label>
-                  <input
-                    className="bg-neutral-100 rounded-lg px-1 py-0.5 text-black border-[1px] border-neutral-300"
-                    type="text"
-                    name="first_name"
-                    id="contact_first_name"
-                  />
-                </div>
-                <div className="flex flex-col gap-1">
-                  <label className="text-sm" htmlFor="last_name">
-                    Last Name
-                  </label>
-                  <input
-                    className="bg-neutral-100 rounded-lg px-1 py-0.5 text-black border-[1px] border-neutral-300"
-                    type="text"
-                    name="last_name"
-                    id="contact_last_name"
-                  />
-                </div>
-                <div className="flex flex-col gap-1">
-                  <label className="text-sm" htmlFor="email">
-                    Email
-                  </label>
-                  <input
-                    className="bg-neutral-100 rounded-lg px-1 py-0.5 text-black border-[1px] border-neutral-300"
-                    type="email"
-                    name="email"
-                    id="contact_email"
-                  />
-                </div>
-                <div className="flex flex-col gap-1">
-                  <label className="text-sm" htmlFor="phone">
-                    Phone Number
-                  </label>
-                  <input
-                    className="bg-neutral-100 rounded-lg px-1 py-0.5 text-black border-[1px] border-neutral-300"
-                    type="tel"
-                    name="phone"
-                    id="contact_phone"
-                  />
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-1 min-w-[300px] md:min-w-[400px] min-h-[200px]">
-                <label className="text-sm" htmlFor="description">
-                  Description
-                </label>
-                <textarea
-                  className="bg-neutral-100 rounded-lg px-1 py-0.5 text-black h-full border-[1px] border-neutral-300"
-                  name="description"
-                  id="contact_description"
-                  placeholder="How can we help?"
-                />
-              </div>
-            </div>
-
-            <button className="bg-(--blue) text-background rounded-xl px-3 py-1 w-fit">
-              Submit
-            </button>
-          </form>
-        </div>
+        <ContactForm />
       </div>
     </section>
   );
