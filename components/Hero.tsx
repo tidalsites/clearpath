@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section className="flex justify-center w-full min-h-[calc(100vh-var(--navbar-height))] relative bg-[url('/hero.png')] bg-cover bg-no-repeat bg-black/85 bg-blend-multiply sm:pt-[70px] md:px-8">
+    <section className="flex justify-center w-full min-h-page-height-mobile md:min-h-page-height relative bg-[url('/hero.png')] bg-cover bg-no-repeat bg-black/85 bg-blend-multiply sm:pt-[70px] md:px-8">
       <div className="flex flex-col lg:flex-row gap-8 overflow-hidden text-background max-w-7xl mx-auto items-center sm:items-start lg:items-center">
-        <div className="flex justify-center py-4 bg-background border-(--blue) w-full | sm:w-fit sm:border-2 sm:px-10 sm:rounded-3xl">
+        <div className="flex justify-center py-4 bg-background border-theme w-full | sm:w-fit sm:border-2 sm:px-10 sm:rounded-3xl">
           <Image src={wordmark} alt="" />
         </div>
         <div className="flex flex-col gap-4 justify-center sm:justify-start px-2 grow">
@@ -21,7 +21,7 @@ export const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              className="rounded-xl px-4 py-1 flex gap-2 items-center justify-center bg-background text-(--blue) font-semibold text-lg outline-1 outline-(--blue)"
+              className="rounded-xl px-4 py-1 flex gap-2 items-center justify-center bg-background text-theme font-semibold text-lg outline-1 outline-theme hover:text-background hover:bg-theme hover:outline-background transition-colors"
               href="#contact"
             >
               <div className="flex p-2 rounded-full items-center justify-center">
