@@ -1,5 +1,4 @@
-import { MdEmail, MdFacebook, MdWhatsapp } from "react-icons/md";
-import { FaInstagram } from "react-icons/fa6";
+import { MdEmail, MdWhatsapp } from "react-icons/md";
 import { LuClock12 } from "react-icons/lu";
 
 export const ContactBar = () => {
@@ -22,20 +21,6 @@ export const ContactBar = () => {
           <p className="border-r border-theme pr-2">Mon - Fri 09:00 - 17:00</p>
           <p>Sat 09:00 - 12:00</p>
         </div>
-        {/* <div className="flex gap-2 items-center ml-auto">
-          <a
-            href="https://facebook.com"
-            className="p-1 rounded-full hover:bg-theme hover:text-background hover:scale-105 transition-all"
-          >
-            <MdFacebook className="text-2xl" />
-          </a>
-          <a
-            href="https://instagram.com"
-            className="p-1 rounded-full hover:bg-theme hover:text-background hover:scale-105 transition-all"
-          >
-            <FaInstagram className="text-2xl" />
-          </a>
-        </div> */}
       </div>
     </div>
   );
