@@ -21,7 +21,7 @@ export const ContactSchema = z
     address1: z.string(),
     // address2: z.string(),
     // state: z.string(),
-    description: z.string().min(1, "Required").max(255),
+    description: z.string().min(1, "Required").max(1000),
   })
   .and(services)
   .superRefine((val, ctx) => {

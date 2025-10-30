@@ -10,15 +10,13 @@ const credentials = {
   secretAccessKey: process.env.SES_SECRET_ACCESS_KEY || "",
 };
 
-const devMode = process.env.NODE_ENV === "development";
-
 export async function sendSESEmail(formData: ContactFormValues) {
   let sent = false;
 
   try {
     const params: SendEmailCommandInput = {
       Destination: {
-        ToAddresses: ["devin@tidalsites.com"],
+        ToAddresses: ["info@myclearpath.co"],
       },
       Message: {
         Body: {
@@ -29,12 +27,11 @@ export async function sendSESEmail(formData: ContactFormValues) {
         },
         Subject: {
           Charset: "UTF-8",
-          Data: devMode ? "Contact Request - DEV MODE" : "Contact Request",
+          Data: "Contact Request",
         },
       },
-      Source: "devin@tidalsites.com",
-      ReturnPath: "bounce@mail.tidalsites.com",
-      ReplyToAddresses: ["devin@tidalsites.com"],
+      Source: "no-reply@myclearpath.co",
+      ReplyToAddresses: [formData.email],
     };
 
     const ses = new SES({
